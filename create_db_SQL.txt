@@ -1,0 +1,32 @@
+create database task1;
+use task1;
+
+create table course ( 
+	course_id char(30), 
+	title char(30),
+	PRIMARY KEY(course_id)
+);
+
+create table teacher ( 
+	teacher_id INT(10) AUTO_INCREMENT, 
+	name char(30), 
+	course_id char(30),
+	PRIMARY KEY(teacher_id)
+);
+
+
+
+
+insert into course values ( 'ID001', 'Course 1' );
+insert into course values ( 'ID002', 'Course 2' );
+insert into course values ( 'ID003', 'Course 3' );
+insert into course values ( 'ID004', 'Course 4' );
+insert into course values ( 'ID005', 'Course 5' );
+
+
+insert into teacher values ( '', 'Teacher 1', '' );
+insert into teacher values ( '', 'Teacher 2', '' );
+insert into teacher values ( '', 'Teacher 3', '' );
+insert into teacher values ( '', 'Teacher 4', '' );
+insert into teacher values ( '', 'Teacher 5', '' );
+
